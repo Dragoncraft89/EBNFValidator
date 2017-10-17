@@ -12,15 +12,15 @@ public class Option implements RuleElement {
 	public String[] calc(Grammar g, String suche, String gebildet) {
 		String[] berechnung = element.calc(g, suche, gebildet);
 		
-		String[] rückgabe = new String[berechnung.length + 1];
+		String[] result = new String[berechnung.length + 1];
 		
 		for(int i = 0; i < berechnung.length; i++) {
-			rückgabe[i] = berechnung[i];
+			result[i] = berechnung[i];
 		}
 		
-		rückgabe[rückgabe.length - 1] = "";
+		result[result.length - 1] = "";
 		
-		return rückgabe;
+		return result;
 	}
 
 }
