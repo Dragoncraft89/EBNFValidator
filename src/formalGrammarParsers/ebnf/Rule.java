@@ -28,6 +28,10 @@ public class Rule {
 	}
 
 	private String recValidate(Grammar g, String suche, String gebildet, int index, boolean toplvl) {
+		
+		if(!suche.matches(safeRegex(gebildet) + ".*"))
+			return "";
+		
 		String[] values = syntax[index].calc(g, suche, gebildet);
 
 		String temp = "";
