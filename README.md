@@ -2,7 +2,7 @@
 A tool that validates a string trough a given EBNF-rules file
 
 Example:
-```
+```java
 import java.io.File;
 import java.io.IOException;
 import formalGrammarParsers.ebnf.GrammarParser;
